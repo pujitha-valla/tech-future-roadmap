@@ -1,0 +1,146 @@
+{
+  "Software Developers": {
+    "description": "Design, develop, and maintain software applications and systems",
+    "skills": ["JavaScript", "Python", "Java", "React", "Node.js", "Git", "Problem Solving", "Algorithm Design", "Testing", "Debugging"],
+    "salary": "$70,000 - $150,000",
+    "roadmap": [
+      {"title": "Programming Fundamentals", "description": "Master core programming languages and concepts", "timeframe": "3-6 months"},
+      {"title": "Framework Mastery", "description": "Learn popular frameworks and libraries", "timeframe": "4-6 months"},
+      {"title": "Project Building", "description": "Build portfolio projects and contribute to open source", "timeframe": "6-12 months"},
+      {"title": "Professional Experience", "description": "Internships or entry-level positions", "timeframe": "12-18 months"},
+      {"title": "Specialization", "description": "Focus on specific domains or technologies", "timeframe": "2-5 years"}
+    ]
+  },
+  "Data Scientists": {
+    "description": "Extract insights from data using statistical analysis and machine learning",
+    "skills": ["Python", "R", "SQL", "Machine Learning", "Statistics", "Data Visualization", "Pandas", "NumPy", "Jupyter", "Critical Thinking"],
+    "salary": "$80,000 - $180,000",
+    "roadmap": [
+      {"title": "Mathematical Foundation", "description": "Statistics, linear algebra, and probability", "timeframe": "4-6 months"},
+      {"title": "Programming & Tools", "description": "Python/R, SQL, and data manipulation libraries", "timeframe": "6-8 months"},
+      {"title": "Machine Learning", "description": "Algorithms, model selection, and evaluation", "timeframe": "8-12 months"},
+      {"title": "Domain Projects", "description": "Real-world data science projects", "timeframe": "12-18 months"},
+      {"title": "Advanced Specialization", "description": "Deep learning, NLP, or computer vision", "timeframe": "2-4 years"}
+    ]
+  },
+  "Marketing Managers": {
+    "description": "Plan and execute marketing campaigns to promote products and services",
+    "skills": ["Marketing Strategy", "Digital Marketing", "Communication", "Analytics", "Social Media", "Content Creation", "Project Management", "Customer Research", "Brand Management", "Leadership"],
+    "salary": "$50,000 - $120,000",
+    "roadmap": [
+      {"title": "Marketing Fundamentals", "description": "Learn core marketing principles and concepts", "timeframe": "2-4 months"},
+      {"title": "Digital Tools Mastery", "description": "Google Analytics, social media platforms, email marketing", "timeframe": "3-6 months"},
+      {"title": "Campaign Experience", "description": "Execute real marketing campaigns and track results", "timeframe": "6-12 months"},
+      {"title": "Leadership Skills", "description": "Team management and strategic planning", "timeframe": "12-24 months"},
+      {"title": "Specialization", "description": "Focus on specific channels or industries", "timeframe": "2-5 years"}
+    ]
+  },
+  "Financial Analysts": {
+    "description": "Analyze financial data to guide business and investment decisions",
+    "skills": ["Financial Analysis", "Excel", "SQL", "Financial Modeling", "Statistics", "Critical Thinking", "Communication", "Accounting", "Economics", "Attention to Detail"],
+    "salary": "$55,000 - $130,000",
+    "roadmap": [
+      {"title": "Financial Fundamentals", "description": "Accounting, finance principles, and Excel mastery", "timeframe": "3-6 months"},
+      {"title": "Analytical Tools", "description": "Advanced Excel, SQL, and financial software", "timeframe": "4-8 months"},
+      {"title": "Financial Modeling", "description": "Build complex financial models and forecasts", "timeframe": "6-12 months"},
+      {"title": "Industry Knowledge", "description": "Specialize in specific sectors or asset classes", "timeframe": "12-24 months"},
+      {"title": "Professional Certifications", "description": "CFA, FRM, or other relevant certifications", "timeframe": "2-4 years"}
+    ]
+  },
+  "Human Resources Specialists": {
+    "description": "Manage employee relations, recruitment, and organizational development",
+    "skills": ["Communication", "Employee Relations", "Recruitment", "HR Software", "Employment Law", "Conflict Resolution", "Training Development", "Performance Management", "Interviewing", "Empathy"],
+    "salary": "$45,000 - $90,000",
+    "roadmap": [
+      {"title": "HR Fundamentals", "description": "Employment law, HR processes, and systems", "timeframe": "2-4 months"},
+      {"title": "Recruitment Mastery", "description": "Sourcing, interviewing, and selection techniques", "timeframe": "4-6 months"},
+      {"title": "Employee Development", "description": "Training programs and performance management", "timeframe": "6-12 months"},
+      {"title": "Strategic HR", "description": "Organizational development and change management", "timeframe": "12-24 months"},
+      {"title": "HR Leadership", "description": "Team management and strategic planning", "timeframe": "2-5 years"}
+    ]
+  },
+  "Graphic Designers": {
+    "description": "Create visual content for print and digital media",
+    "skills": ["Adobe Creative Suite", "Typography", "Color Theory", "Branding", "Layout Design", "Creativity", "Communication", "Client Management", "Print Design", "Web Design"],
+    "salary": "$40,000 - $80,000",
+    "roadmap": [
+      {"title": "Design Fundamentals", "description": "Typography, color theory, and composition", "timeframe": "2-4 months"},
+      {"title": "Software Mastery", "description": "Adobe Creative Suite and design tools", "timeframe": "4-6 months"},
+      {"title": "Portfolio Development", "description": "Create diverse design projects", "timeframe": "6-12 months"},
+      {"title": "Client Work", "description": "Freelance or agency experience", "timeframe": "12-18 months"},
+      {"title": "Specialization", "description": "Focus on specific design areas", "timeframe": "2-4 years"}
+    ]
+  },
+  "Teachers": {
+    "description": "Educate students in academic subjects and life skills",
+    "skills": ["Communication", "Curriculum Development", "Classroom Management", "Patience", "Adaptability", "Assessment", "Technology Integration", "Mentoring", "Public Speaking", "Empathy"],
+    "salary": "$40,000 - $70,000",
+    "roadmap": [
+      {"title": "Education Degree", "description": "Complete bachelor's degree in education or subject area", "timeframe": "4 years"},
+      {"title": "Student Teaching", "description": "Supervised classroom experience", "timeframe": "1 semester"},
+      {"title": "Certification", "description": "Obtain teaching license for your state", "timeframe": "3-6 months"},
+      {"title": "Classroom Experience", "description": "First years of independent teaching", "timeframe": "2-3 years"},
+      {"title": "Professional Development", "description": "Advanced certifications and specializations", "timeframe": "Ongoing"}
+    ]
+  },
+  "Nurses": {
+    "description": "Provide patient care and support in healthcare settings",
+    "skills": ["Patient Care", "Medical Knowledge", "Communication", "Empathy", "Critical Thinking", "Time Management", "Teamwork", "Physical Stamina", "Attention to Detail", "Stress Management"],
+    "salary": "$60,000 - $90,000",
+    "roadmap": [
+      {"title": "Nursing Education", "description": "Complete nursing degree (BSN preferred)", "timeframe": "2-4 years"},
+      {"title": "NCLEX Preparation", "description": "Pass the nursing licensure exam", "timeframe": "2-3 months"},
+      {"title": "Clinical Experience", "description": "Entry-level nursing position", "timeframe": "1-2 years"},
+      {"title": "Specialization", "description": "Focus on specific nursing areas", "timeframe": "2-3 years"},
+      {"title": "Advanced Practice", "description": "Pursue advanced degrees or certifications", "timeframe": "2-4 years"}
+    ]
+  },
+  "Sales Representatives": {
+    "description": "Sell products or services to businesses and consumers",
+    "skills": ["Communication", "Persuasion", "Customer Relationship Management", "Product Knowledge", "Negotiation", "CRM Software", "Networking", "Resilience", "Time Management", "Presentation Skills"],
+    "salary": "$45,000 - $120,000",
+    "roadmap": [
+      {"title": "Sales Fundamentals", "description": "Learn sales process and techniques", "timeframe": "1-3 months"},
+      {"title": "Product Training", "description": "Master product knowledge and value propositions", "timeframe": "2-4 months"},
+      {"title": "Customer Development", "description": "Build customer base and relationships", "timeframe": "6-12 months"},
+      {"title": "Advanced Sales Skills", "description": "Complex selling and account management", "timeframe": "12-24 months"},
+      {"title": "Sales Leadership", "description": "Team management and strategic sales", "timeframe": "3-5 years"}
+    ]
+  },
+  "Project Managers": {
+    "description": "Plan, execute, and deliver projects on time and within budget",
+    "skills": ["Project Management", "Leadership", "Communication", "Risk Management", "Agile", "Scrum", "Time Management", "Problem Solving", "Stakeholder Management", "Planning"],
+    "salary": "$70,000 - $130,000",
+    "roadmap": [
+      {"title": "PM Fundamentals", "description": "Learn project management methodologies", "timeframe": "2-4 months"},
+      {"title": "Tool Proficiency", "description": "Master PM software and frameworks", "timeframe": "3-6 months"},
+      {"title": "Project Experience", "description": "Lead small to medium projects", "timeframe": "12-18 months"},
+      {"title": "Certification", "description": "PMP, Agile, or other PM certifications", "timeframe": "6-12 months"},
+      {"title": "Senior Leadership", "description": "Program management and strategic planning", "timeframe": "3-5 years"}
+    ]
+  },
+  "Social Workers": {
+    "description": "Help individuals and communities solve problems and improve their well-being",
+    "skills": ["Communication", "Empathy", "Case Management", "Counseling", "Crisis Intervention", "Cultural Competency", "Assessment", "Advocacy", "Documentation", "Patience"],
+    "salary": "$45,000 - $75,000",
+    "roadmap": [
+      {"title": "Social Work Education", "description": "Complete BSW or MSW degree", "timeframe": "2-4 years"},
+      {"title": "Field Experience", "description": "Supervised practicum in social work settings", "timeframe": "6-12 months"},
+      {"title": "Licensure", "description": "Obtain social work license for your state", "timeframe": "1-2 years"},
+      {"title": "Practice Experience", "description": "Work in various social work settings", "timeframe": "2-3 years"},
+      {"title": "Specialization", "description": "Focus on specific populations or issues", "timeframe": "3-5 years"}
+    ]
+  },
+  "Accountants": {
+    "description": "Manage financial records and ensure compliance with regulations",
+    "skills": ["Accounting", "Excel", "Financial Analysis", "Tax Preparation", "Attention to Detail", "QuickBooks", "GAAP", "Auditing", "Problem Solving", "Time Management"],
+    "salary": "$50,000 - $100,000",
+    "roadmap": [
+      {"title": "Accounting Education", "description": "Complete accounting degree or certification", "timeframe": "2-4 years"},
+      {"title": "Software Proficiency", "description": "Master accounting software and Excel", "timeframe": "3-6 months"},
+      {"title": "Entry-Level Experience", "description": "Staff accountant or bookkeeper role", "timeframe": "1-2 years"},
+      {"title": "Professional Certification", "description": "CPA or other relevant certifications", "timeframe": "1-3 years"},
+      {"title": "Senior Roles", "description": "Senior accountant or controller positions", "timeframe": "3-5 years"}
+    ]
+  }
+}

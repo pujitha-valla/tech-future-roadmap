@@ -1,3 +1,5 @@
+import careerData from '@/data/career_data.json';
+
 const GEMINI_API_KEY = 'AIzaSyBMAnVXOg6my4KW6-oMzSKf_UIhbfDPOf4';
 const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent';
 
@@ -16,7 +18,82 @@ interface CareerMatch {
   averageSalary: string;
 }
 
+// Vector-based skill matching functions
+function computeUserVector(skills: string[], allSkills: string[]): number[] {
+  // Create binary vector (1 if skill present, 0 if not)
+  return allSkills.map(skill => 
+    skills.some(userSkill => 
+      userSkill.toLowerCase().includes(skill.toLowerCase()) || 
+      skill.toLowerCase().includes(userSkill.toLowerCase())
+    ) ? 1 : 0
+  );
+}
+
+function cosine(a: number[], b: number[]): number {
+  const dotProduct = a.reduce((sum, val, i) => sum + val * b[i], 0);
+  const magnitudeA = Math.sqrt(a.reduce((sum, val) => sum + val * val, 0));
+  const magnitudeB = Math.sqrt(b.reduce((sum, val) => sum + val * val, 0));
+  
+  if (magnitudeA === 0 || magnitudeB === 0) return 0;
+  return dotProduct / (magnitudeA * magnitudeB);
+}
+
+// Enhanced skill matching with vector analysis
+const analyzeSkillsWithVectors = (skills: string[]): CareerMatch[] => {
+  const roles = careerData as Record<string, any>;
+  const allSkills = Object.values(roles).flatMap((r: any) => r.skills);
+  const uniqueSkills = Array.from(new Set(allSkills));
+  const userVec = computeUserVector(skills, uniqueSkills);
+
+  const scored = Object.entries(roles).map(([role, info]: [string, any]) => {
+    const roleVec = computeUserVector(info.skills, uniqueSkills);
+    const vectorScore = cosine(userVec, roleVec);
+    
+    // Enhanced scoring with multiple factors
+    const directMatches = skills.filter(skill => 
+      info.skills.some((roleSkill: string) => 
+        skill.toLowerCase().includes(roleSkill.toLowerCase()) || 
+        roleSkill.toLowerCase().includes(skill.toLowerCase())
+      )
+    ).length;
+    
+    const transferableSkills = skills.filter(skill => {
+      const transferable = ['Communication', 'Problem Solving', 'Teamwork', 'Leadership', 'Critical Thinking', 'Time Management'];
+      return transferable.some(t => skill.toLowerCase().includes(t.toLowerCase()));
+    }).length;
+
+    // Weighted scoring: vector similarity (40%) + direct matches (40%) + transferable skills (20%)
+    const finalScore = Math.round(
+      (vectorScore * 0.4 + (directMatches / info.skills.length) * 0.4 + (transferableSkills / skills.length) * 0.2) * 100
+    );
+
+    return { 
+      role, 
+      score: Math.max(finalScore, 10), // Minimum score of 10
+      info 
+    };
+  }).sort((a, b) => b.score - a.score).slice(0, 6);
+
+  return scored.map(({ role, score, info }) => ({
+    role,
+    matchScore: score,
+    description: info.description,
+    requiredSkills: info.skills,
+    roadmap: info.roadmap,
+    averageSalary: info.salary
+  }));
+};
+
 export const analyzeSkills = async (skills: string[]): Promise<CareerMatch[]> => {
+  // Use vector-based analysis as primary method
+  try {
+    const vectorResults = analyzeSkillsWithVectors(skills);
+    if (vectorResults.length > 0) {
+      return vectorResults;
+    }
+  } catch (error) {
+    console.warn('Vector analysis failed, falling back to Gemini API:', error);
+  }
   const prompt = `
 As Gamya, an advanced AI career guidance system with extensive training on tech industry data, analyze the following skills and provide the top 4-5 most suitable tech career roles. Consider current industry trends, salary data, and skill requirements.
 
