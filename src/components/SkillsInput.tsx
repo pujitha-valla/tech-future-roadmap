@@ -14,10 +14,51 @@ export const SkillsInput = ({ onSkillsChange }: SkillsInputProps) => {
   const [skills, setSkills] = useState<string[]>([]);
 
   const predefinedSkills = [
-    'JavaScript', 'Python', 'React', 'Node.js', 'TypeScript', 'HTML/CSS',
-    'Data Analysis', 'Machine Learning', 'SQL', 'Git', 'AWS', 'Docker',
+    // Programming Languages
+    'JavaScript', 'Python', 'Java', 'C++', 'C#', 'TypeScript', 'Go', 'Rust', 'Swift', 'Kotlin',
+    'PHP', 'Ruby', 'Scala', 'R', 'MATLAB', 'Dart', 'Elixir', 'Clojure',
+    
+    // Frontend Technologies
+    'React', 'Vue.js', 'Angular', 'Svelte', 'Next.js', 'Nuxt.js', 'HTML/CSS', 'SASS/SCSS',
+    'Tailwind CSS', 'Bootstrap', 'Material UI', 'Styled Components', 'Webpack', 'Vite',
+    
+    // Backend Technologies
+    'Node.js', 'Express.js', 'Django', 'Flask', 'FastAPI', 'Spring Boot', 'Ruby on Rails',
+    'ASP.NET', 'Laravel', 'GraphQL', 'REST APIs', 'Microservices', 'Serverless',
+    
+    // Databases
+    'SQL', 'PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'Elasticsearch', 'Cassandra',
+    'Neo4j', 'DynamoDB', 'Firebase', 'Supabase',
+    
+    // Cloud & DevOps
+    'AWS', 'Azure', 'Google Cloud', 'Docker', 'Kubernetes', 'Jenkins', 'GitLab CI',
+    'GitHub Actions', 'Terraform', 'Ansible', 'Prometheus', 'Grafana',
+    
+    // Data Science & ML
+    'Machine Learning', 'Deep Learning', 'Data Analysis', 'Data Visualization', 'Pandas',
+    'NumPy', 'Scikit-learn', 'TensorFlow', 'PyTorch', 'Jupyter', 'Tableau', 'Power BI',
+    'Apache Spark', 'Hadoop', 'Statistics', 'A/B Testing',
+    
+    // Mobile Development
+    'React Native', 'Flutter', 'iOS Development', 'Android Development', 'Xamarin',
+    'Ionic', 'Progressive Web Apps',
+    
+    // Design & UX
+    'UI/UX Design', 'Figma', 'Adobe XD', 'Sketch', 'Prototyping', 'User Research',
+    'Design Systems', 'Accessibility', 'Usability Testing',
+    
+    // Soft Skills
     'Communication', 'Problem Solving', 'Leadership', 'Teamwork', 'Creativity',
-    'Time Management', 'Critical Thinking', 'Adaptability'
+    'Time Management', 'Critical Thinking', 'Adaptability', 'Project Management',
+    'Agile/Scrum', 'Product Strategy', 'Mentoring', 'Public Speaking', 'Negotiation',
+    
+    // Emerging Technologies
+    'Blockchain', 'Web3', 'AR/VR', 'IoT', 'Edge Computing', 'Quantum Computing',
+    'Computer Vision', 'NLP', 'Robotics', 'Cybersecurity',
+    
+    // Tools & Platforms
+    'Git', 'GitHub', 'GitLab', 'Jira', 'Confluence', 'Slack', 'VS Code', 'IntelliJ',
+    'Postman', 'Figma', 'Notion', 'Linear'
   ];
 
   const addSkill = (skill: string) => {

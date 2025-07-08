@@ -75,7 +75,7 @@ export const CareerGuidanceApp = () => {
           <div className="flex items-center gap-2">
             <Sparkles className="h-6 w-6 text-primary" />
             <h1 className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              AI Career Guidance
+              Gamya
             </h1>
           </div>
           <ThemeToggle />
@@ -89,10 +89,10 @@ export const CareerGuidanceApp = () => {
           <div className="text-center space-y-6 py-12">
             <div className="space-y-3">
               <h2 className="text-4xl font-bold tracking-tight bg-gradient-primary bg-clip-text text-transparent">
-                Discover Your Perfect Tech Career
+                Welcome to Gamya
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Let AI analyze your skills and create a personalized roadmap to your dream tech job
+                Your advanced AI career companion that analyzes your unique skillset and creates personalized roadmaps to your dream tech career
               </p>
             </div>
 
